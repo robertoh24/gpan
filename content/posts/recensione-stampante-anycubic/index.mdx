@@ -1,0 +1,31 @@
+---
+title: Recensione stampante anycubic
+date: 2019-04-15
+image: ./sunset-beach.jpg
+imageAlt: Recensione stampante anycubic 
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus, nunc et ornare fermentum, felis turpis finibus est, id ultricies arcu turpis eu sem. Nunc a enim lectus. Proin tincidunt est ac ipsum ornare sodales. Fusce eget elit non mi pharetra consequat ut et nunc. Suspendisse ex enim, fringilla vel ultricies vitae, sodales in ante. Sed et enim ipsum. Quisque fringilla diam neque, vitae ullamcorper arcu pulvinar in. Suspendisse vehicula laoreet mi. Aliquam fringilla dignissim nibh, nec sagittis risus aliquam non. Quisque vel pretium purus. Duis tristique consequat facilisis. Nullam lobortis dui ac massa euismod blandit. Donec placerat vestibulum facilisis. Sed placerat pharetra lacus vel tincidunt. Pellentesque enim justo, scelerisque et semper et, euismod vitae sapien.
+
+```js:title=gatsby-config.js
+module.exports = {
+  plugins: [
+    "gatsby-theme-blog", // highlight-line
+    "gatsby-theme-notes",
+  ],
+}
+```
+
+This is another paragraph after the code block.
+
+## This is a secondary heading
+
+```jsx
+import React from "react"
+import { ThemeProvider } from "theme-ui"
+import theme from "./theme"
+
+export default props => (
+  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+)
+```

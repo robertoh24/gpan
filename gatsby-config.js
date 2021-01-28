@@ -1,14 +1,42 @@
 module.exports = {
   siteMetadata: {
-    title: "gap",
+    title: "Gpan",
   },
   plugins: [
+    
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-theme-blog`,
       options: {
-        trackingId: "",
+        
+          prismPreset: `dracula`,
+          preset: false,
+        
+        // basePath defaults to `/`
+        basePath: `/blog`,
+        mdxOtherwiseConfigured: true,
+        contentPath: `./content/posts`
+        
       },
     },
+    {
+      resolve: `@lekoarts/gatsby-theme-cara`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-gallery`,
+      options: {        
+       
+        basePath: `/galleria`,
+        
+        // basePath defaults to `/`
+        
+        
+      },
+    },
+  
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

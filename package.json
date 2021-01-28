@@ -1,8 +1,8 @@
 {
-  "name": "gap",
+  "name": "gpan",
   "version": "1.0.0",
   "private": true,
-  "description": "gap",
+  "description": "gpan-soluzioni-3d",
   "author": "robertoh24",
   "keywords": [
     "gatsby"
@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@lekoarts/gatsby-theme-cara": "^1.2.19",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^2.26.1",
@@ -27,6 +28,8 @@
     "gatsby-plugin-sharp": "^2.13.3",
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-source-filesystem": "^2.10.0",
+    "gatsby-theme-blog": "^2.0.5",
+    "gatsby-theme-gallery": "^1.0.2",
     "gatsby-transformer-sharp": "^2.11.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
