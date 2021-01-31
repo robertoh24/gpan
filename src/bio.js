@@ -51,21 +51,21 @@ const Bio = () => {
   )
 }
 
-// const bioQuery = graphql`
-//   query BioQuery {
-//     site {
-//       siteMetadata {
-//         author
-//       }
-//     }
-//     avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
-//       childImageSharp {
-//         fixed(width: 48, height: 48) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `
+const bioQuery = graphql`
+  query BioQuery {
+    site {
+      siteMetadata {
+        author
+      }
+    }
+    avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
+      childImageSharp {
+        fixed(width: 48, height: 48) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default Bio
